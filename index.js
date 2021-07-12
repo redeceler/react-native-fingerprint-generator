@@ -65,8 +65,13 @@ var Status = {
  *     documentation.
  * @return {promise} Promise resolves true if call is done, otherwise throws.
  */
-function configure(orgId) {
-  return RNCybersourceDeviceFingerprint.configure(orgId);
+function configure(debug, orgId) {
+  
+  if(!orgId){
+    orgId = !debug ? "1snn5n9w" : ""
+  }
+
+  return RNCybersourceDeviceFingerprint.configure();
 }
 
 /**

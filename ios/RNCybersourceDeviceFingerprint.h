@@ -1,7 +1,7 @@
 //
 //  RNCybersourceDeviceFingerprint.h
 //
-//  Created by Estuardo Estrada on 12/16/18.
+//  Created by Jhonatan F. Ciriaco on 09/07/21.
 //  Copyright © 2018. All rights reserved.
 //
 

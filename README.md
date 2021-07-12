@@ -39,18 +39,29 @@ NOTE: if you're using RN 0.60+ you can autolinking, ignore step 1.
 import RNCybersourceDeviceFingerprint from 'react-native-fingerprint-genrator'
 
 // INITIALIZE THE SDK
+await RNCybersourceDeviceFingerprint.configure(ORG_ID);
+
+OR
+
 RNCybersourceDeviceFingerprint.configure(ORG_ID).then( () => {
-	console.log('THE CYBERSOURCE INIT IS OK')
+	console.log('THE CYBERSOURCE SKD INITIALIZED')
 })
 .catch(err => {
-	console.log('THE CYBERSOURCE INIT ERROR IS ', err)
+	console.log('SOMETHING WENT WRONG!  ', err)
 })
-// getSession accepts custom attributes for session, check the Cybersource SDK documentation
+
+================================================================ 
+// GET SESSION ID
+// Obs: getSession accepts custom attributes for session, check the Cybersource SDK documentation
+const { sessionId } = await RNCybersourceDeviceFingerprint.getSessionID([]);
+
+OR 
+
 RNCybersourceDeviceFingerprint.getSessionID([]).then( (obj) => {
-	console.log(`The session ID is ${obj.sessionId}`)
+	console.log(`The session id is ${obj.sessionId}`)
 })
 .catch(err => {
-	console.log('THE CYBERSOURCE ERROR IS ', err)
+	console.log('ERROR ON GET SESSION ID ', err)
 })
 
 ```

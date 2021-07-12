@@ -1,7 +1,7 @@
 //
 //  RNCybersourceDeviceFingerprint.m
 //
-// Created by Jhonatan F. Ciriaco on 12/07/21.
+// Created by Jhonatan F. Ciriaco on 09/07/21.
 //  Copyright © 2018. All rights reserved.
 //
 

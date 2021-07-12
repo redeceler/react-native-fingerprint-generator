@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RNCybersourceDeviceFingerprint"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "This library returns the device fingerprint, required for Cybersource mobile implementations"
   s.homepage     = "https://github.com/JhonySpark/react-native-fingerprint-genrator"
   s.license      = "MIT"
