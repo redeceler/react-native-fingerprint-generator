@@ -71,7 +71,7 @@ function configure(debug, orgId) {
     orgId = !debug ? "1snn5n9w" : ""
   }
 
-  return RNCybersourceDeviceFingerprint.configure();
+  return RNCybersourceDeviceFingerprint.configure(orgId);
 }
 
 /**
