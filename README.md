@@ -3,7 +3,7 @@
 
 ## Getting started
 
-`$ yarn add https://github.com/JhonySpark/react-native-fingerprint-genrator`
+`$ yarn add https://github.com/redeceler/react-native-fingerprint-genrator`
 
 ### Manual installation
 
