@@ -3,7 +3,7 @@
 
 ## Getting started
 
-`$ yarn add https://github.com/redeceler/react-native-fingerprint-genrator`
+`$ yarn add https://github.com/redeceler/react-native-fingerprint-generator`
 
 ### Manual installation
 
@@ -12,7 +12,7 @@
 
 NOTE: if you're using RN 0.60+ you can autolinking, ignore step 1.
 
-1. Add pod 'RNCybersourceDeviceFingerprint', :path => '../node_modules/react-native-fingerprint-genrator/ios' to your Podfile
+1. Add pod 'RNCybersourceDeviceFingerprint', :path => '../node_modules/react-native-fingerprint-generator/ios' to your Podfile
 2. Run pod install from ios folder
 3. Run your project (`Cmd+R`)<
 
@@ -25,18 +25,18 @@ NOTE: if you're using RN 0.60+ you can autolinking, ignore step 1.
   - Add `new RNCybersourceDeviceFingerprintPackage(_application)` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-fingerprint-genrator'
-  	project(':react-native-fingerprint-genrator').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-fingerprint-genrator/android')
+  	include ':react-native-fingerprint-generator'
+  	project(':react-native-fingerprint-generator').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-fingerprint-generator/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      implementation project(':react-native-fingerprint-genrator')
+      implementation project(':react-native-fingerprint-generator')
   	```
 
 
 ## Usage
 ```javascript
-import RNCybersourceDeviceFingerprint from 'react-native-fingerprint-genrator'
+import RNCybersourceDeviceFingerprint from 'react-native-fingerprint-generator'
 
 // INITIALIZE THE SDK
 await RNCybersourceDeviceFingerprint.configure(ORG_ID);
